@@ -1,0 +1,307 @@
+/*===================================
+            NAVBAR 
+=====================================*/
+*{
+    margin: 0px;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.wrapper{
+    /* background-color:rgb(17, 158, 158) ; */
+    position: relative;
+    top: -4px;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0px;
+    margin: 5px 50px;
+    height: max-content;
+}
+.logo{
+    font-family:cursive;
+    font-weight: 600;
+    color:rgb(88, 20, 8);
+}
+
+.lists{
+    list-style: none;
+}
+.lists li{
+    display: inline-flex;
+    position: relative;
+    overflow: hidden;
+    justify-content: space-between;
+    max-width: 100%;
+}
+
+.lists a{
+    text-decoration: none;
+    margin:0 20px;
+    font-weight: 600;
+    color: black;
+}
+/* Under line hover effect */
+/* a::before{
+    content: " ";
+    background:red;
+    width:0px;
+    height:3px;
+    position: absolute;
+    bottom: 0px;
+    left: 8px;
+}
+a:hover::before{
+    width:80%;
+    transition: 0.5s;
+} */
+
+/* End of underline hover effect */
+a:hover{
+    color:rgb(168, 209, 240) ;
+    /* color: rgb(255, 255, 255); */
+}
+
+/* Burger */
+.burger{
+    display: inline-flex;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    visibility: hidden;
+}
+.line1{
+    width:20px;
+    height:2px;
+    /* background-color: #08e; */
+    background-color: white;
+}
+.line2{
+    width:20px;
+    height:2px;
+    /* background-color:#08e; */
+    background-color: white;
+}
+.line3{
+    width:20px;
+    height:2px;
+    /* background-color: #08e; */
+    background-color: white;
+}
+.line{
+    margin: 2px;
+}
+
+/* Burger ends */
+
+@media only screen and (max-width:492px){
+    .burger{
+        visibility: visible;
+    }
+    .lists{
+        display: inline-block;
+        visibility: hidden;
+        /* opacity: 0; */
+    }
+}
+
+/*===================================
+            About Page
+=====================================*/
+
+.aboutME{
+    height: 80vh;
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.cursor{
+    /* width: 0.5vw; */
+    /* height: 1vh; */
+    cursor: text;
+    /* background-color: black; */
+    animation: blink 1.6s infinite;
+}
+
+@keyframes blink {
+    0%{
+        opacity: 1;
+    }
+    30%{
+        opacity: 0;
+    }
+    45%{
+        opacity: 1;
+    }
+    60%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+/*===================================
+            Home Page
+=====================================*/
+
+body{
+    /* background-image: url(../image/wave.jpg); */
+    background-image: url("https://images.unsplash.com/photo-1631273525652-595de9c034a0?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1fHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+    background-repeat: no-repeat;
+    /* background-size: 1370px 650px; */
+    background-size: 100% 115%;
+    /* background-position: center; */
+    /* background-size: cover; */
+
+}
+.data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+#text{
+    margin-top: 30px;
+    cursor:text;
+    border: none;
+    box-shadow: 0 5px 10px 2px black;
+    /* border-radius:0 20px; */
+}
+/* responsive text area */
+textarea{
+    box-sizing: border-box;
+    max-width: 80%;
+    padding: 10px;
+    /* max-height:30%; */
+}
+/* responsive text */
+.head{
+    font-size: 4vw;
+    display: block;
+    /* margin:auto; */
+}
+.buttons{
+    /* background-color: #08e; */
+    margin-top: 10px;
+}
+.buttons button{
+    cursor: pointer;
+    padding:5px 10px;
+    font-size: 16px;
+    /* background-color:rgb(19, 131, 216) ; */
+    background-color: rgb(231, 50, 50);
+    color: white;
+    font-weight: 600;
+    margin: 10px 10px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 2px 0 4px rgb(77, 4, 4);
+}
+.buttons button:hover{
+    background-color: rgb(9, 105, 179);
+    position: relative;
+    bottom: 5px ;
+    /* transition:background-color 1s ease-out ; */
+}
+
+/* displaying count */
+#show_number{
+    width: max-content;
+    height: max-content;
+    padding: 10px;
+    font-size: 5vw;
+    text-align: center;
+    background-color: rgb(231, 203, 203);
+    position: absolute;
+    border-radius: 10px;
+}
+
+.action{
+    opacity: 0;
+}
+
+@media only screen and (min-width:940px){
+    .head{
+        font-size: 2.5vw;
+    }     
+}
+
+
+/*===================================
+            Contact Page
+=====================================*/
+
+.contactPage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+h1{
+    display:block;
+    margin: auto;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px;
+}
+input{
+    padding: 8px;
+    width: 55vw;
+    height: 5vh;
+    border-radius: 12px;
+    border: none;
+    margin: 5px;
+}
+textarea{
+    margin: 5px;
+    border-radius: 12px;
+    /* max-width: 90%; */
+    min-width: 57%;
+    /* min-height: 50%; */
+    border: none;
+}
+.btn{
+    background-color: rgb(231, 50, 50);
+    box-shadow: 0px 2px 0 4px rgb(77, 4, 4);
+    padding: 10px;
+    max-width: 90% ;
+    border: none;
+    border-radius: 12px;
+    min-width: 10vw;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    margin-top: 10px;
+    /* transition-delay: 2s; */
+}
+.btn:hover{
+    background-image: linear-gradient(rgb(129, 243, 129) 30%,rgb(118, 118, 252));
+}
+
+
+@media screen and (max-width:466px) {
+    .contactPage form textarea{
+        height: 34vh;
+    }
+}
