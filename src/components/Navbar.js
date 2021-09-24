@@ -4,7 +4,7 @@ import {NavLink} from 'react-router-dom';
 function NavBar() {
 
     const show = () => {
-        console.log("show");
+        // console.log("show");
         let s = document.getElementById("lists");
         // s.classList.toggle("change");
         if (s.style.visibility === "hidden") {
