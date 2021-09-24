@@ -8,7 +8,7 @@ function Contact() {
                 <input type="text" placeholder="Your Name" />
                 <input type="email" placeholder="Your Email Id" />
                 <textarea name="txt" id="txt" rows="15" placeholder="Your Message"></textarea>
-                <button type="submit" className="btn" onClick={submit}>Submit</button>
+                <button type="button" className="btn" onClick={submit}>Submit</button>
             </form>
         </div>
     )
