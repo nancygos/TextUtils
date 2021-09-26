@@ -19,24 +19,24 @@ function Home() {
         setWords("");
     }
 
-    const count =()=>{
+    const countLetters = () =>{
+        let num = 0;
+        for(let i = 0; i< words.length ; i++){
+            if(words[i] === ' '){
+                continue;
+            }
+            else{
+                num++ ;
+            }
+        }
+        let s = document.getElementById("show_number");
+        let c = JSON.parse(num);
+        s.innerHTML = c + ' Letter(s)';
 
-        // let num = 0;
-        // for(let i=0 ; i<words.length ; i++){
+        s.classList.toggle("action");
+    } 
 
-        //     if( document.getElementById('text').value ){
-        //         if(words[i] === ' ' &&  words[i+1] !== ' ' ){
-        //            num++;
-        //         }
-        //     }
-        // }
-        // if(c === 0){
-            // s.innerHTML = c + " words";
-        // }
-        // else{
-        //     s.innerHTML = (c + 1) + " words";
-        // }
-
+    const countWords =()=>{
 
         // Very very important ,   Main logic
         let num = 0;
@@ -46,7 +46,7 @@ function Home() {
 
         let s = document.getElementById("show_number");
         let c = JSON.parse(num);
-        s.innerHTML = c + " words";
+        s.innerHTML = c + " Word(s)";
         
         
         s.classList.toggle("action");
@@ -69,7 +69,8 @@ function Home() {
             <div className="buttons">
                 <button type="button" onClick={upper} >Upper Case</button>
                 <button type="button" onClick={lower}>Lower Case</button>
-                <button type="button" onClick={count}>Count</button>
+                <button type="button" onClick={countWords}>Words</button>
+                <button type="button" onClick={countLetters}>Letters</button>
                 <button type="button" onClick={clear}>Clear</button>
             </div>
         </div>
