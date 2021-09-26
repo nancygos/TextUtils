@@ -17,7 +17,7 @@ function NavBar() {
             s.style.textAlign = "right";
             s.style.position="relative";
             s.style.left="7%";
-            s.style.width="70px";
+            s.style.width="77px";
         }
         else {
             s.style.visibility = "hidden";
