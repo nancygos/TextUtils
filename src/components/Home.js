@@ -22,7 +22,7 @@ function Home() {
     const countLetters = () =>{
         let num = 0;
         for(let i = 0; i< words.length ; i++){
-            if(words[i] === ' '){
+            if(words[i] === ' ' || words[i] === '\n' || words[i] === '-' || words[i] === '/' || words[i] === '.' || words[i] === '_' || words[i] === '^' || words[i] === '*' || words[i] === '(' || words[i] === ')' || words[i] === '!' || words[i] === '=' || words[i] === '+' ){
                 continue;
             }
             else{
