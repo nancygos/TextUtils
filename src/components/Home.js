@@ -16,37 +16,40 @@ function Home() {
 
     const clear = () =>{
         // console.log("Clear it");
-        setWords(" ");
+        setWords("");
     }
 
     const count =()=>{
-        // console.log("counting");
-        let num = 0;
 
-        for(let i=0 ; i<words.length ; i++){
-            if(words[i] === " " || words[i]  === '.' || words[i] === "-" || words[i] === "_"){
-                continue;
-            }
-            else{
-                num++;
-            }
+        // let num = 0;
+        // for(let i=0 ; i<words.length ; i++){
+
+        //     if( document.getElementById('text').value ){
+        //         if(words[i] === ' ' &&  words[i+1] !== ' ' ){
+        //            num++;
+        //         }
+        //     }
+        // }
+        // if(c === 0){
+            // s.innerHTML = c + " words";
+        // }
+        // else{
+        //     s.innerHTML = (c + 1) + " words";
+        // }
+
+
+        // Very very important ,   Main logic
+        let num = 0;
+        if(document.getElementById('text').value){
+            num = words.trim().split(/\s+/).length;
         }
-        // let newWord = words + "\nNumber of words are: " + num;
-        // setWords(newWord);
+
         let s = document.getElementById("show_number");
         let c = JSON.parse(num);
-        s.innerHTML = c + " letters";
-
-        // setTimeout(function() {
-        //     $('#show_number').fadeout('fast');
-        // },1000);
-        // count.fadeOut(300);
+        s.innerHTML = c + " words";
+        
         
         s.classList.toggle("action");
-        
-        // setTimeout( function(){
-        //     s.className.replace("show_number" , " ");
-        // } , 2000);
     }
     
     const handleOnChange=(event)=>{

@@ -296,7 +296,7 @@ textarea{
     /* transition-delay: 2s; */
 }
 .btn:hover{
-    background-image: linear-gradient(rgb(129, 243, 129) 30%,rgb(118, 118, 252));
+    background-image: linear-gradient(to right bottom ,rgba(233, 45, 45),rgb(230, 162, 162) );
 }
 
 
