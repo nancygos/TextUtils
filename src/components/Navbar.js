@@ -11,13 +11,13 @@ function NavBar() {
             s.style.visibility = "visible";
             s.style.display = "inline-block";
             s.style.padding = "5px";
-            // s.style.backgroundColor = "white";
             s.style.backgroundColor = "transparent";
+            // s.style.backgroundColor = "white";
             // s.style.margin = "15px";
             s.style.textAlign = "right";
             s.style.position="relative";
-            s.style.left="13%";
-            // s.style.top="5%";
+            s.style.left="7%";
+            s.style.width="70px";
         }
         else {
             s.style.visibility = "hidden";
