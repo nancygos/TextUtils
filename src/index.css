@@ -299,7 +299,16 @@ textarea{
 .btn:hover{
     background-image: linear-gradient(to right bottom ,rgba(233, 45, 45),rgb(230, 162, 162) );
 }
-
+.star{
+    color:red
+}
+.required{
+    font-size: 14px;
+    color: red;
+    position: absolute;
+    right:25%;
+    top:16%
+}
 
 @media screen and (max-width:466px) {
     .contactPage form textarea{

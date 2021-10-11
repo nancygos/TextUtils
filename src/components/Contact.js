@@ -4,6 +4,7 @@ function Contact() {
     return (
         <div className="contactPage">
             <h1>Contact Us!</h1>
+            <div className="required"> <span className="star">*</span> Fill all feilds please</div>
             <form action="">
                 <input type="text" id="nameInput" placeholder="Your Name" />
                 <input type="email" id="emailInput" placeholder="Your Email Id" />
@@ -19,7 +20,7 @@ const submit = () =>{
     let emailInput = document.getElementById('emailInput');
     let txt = document.getElementById('txt');
 
-    if(nameInput && emailInput && txt){
+    if(nameInput.value && emailInput.value && txt.value){
         alert("Succesfully submited");
     }
     else{
