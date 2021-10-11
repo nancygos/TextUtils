@@ -33,7 +33,12 @@ function Home() {
         let c = JSON.parse(num);
         s.innerHTML = c + ' Letter(s)';
 
-        s.classList.toggle("action");
+        if(s.style.visibility === 'hidden'){
+            s.style.visibility = 'visible';
+        }
+        else{
+            s.style.visibility = 'hidden';
+        }
     } 
 
     const countWords =()=>{
@@ -48,8 +53,13 @@ function Home() {
         let c = JSON.parse(num);
         s.innerHTML = c + " Word(s)";
         
-        
-        s.classList.toggle("action");
+        if(s.style.visibility === 'hidden'){
+            s.style.visibility = 'visible';
+        }
+        else{
+            s.style.visibility = 'hidden';
+        }
+        // s.classList.toggle("action");
     }
     
     const handleOnChange=(event)=>{

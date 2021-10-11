@@ -230,11 +230,9 @@ textarea{
     background-color: rgb(231, 203, 203);
     position: absolute;
     border-radius: 10px;
+    visibility: hidden;
 }
 
-.action{
-    opacity: 0;
-}
 
 @media only screen and (min-width:940px){
     .head{
