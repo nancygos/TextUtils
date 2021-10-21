@@ -314,12 +314,12 @@ textarea{
     .contactPage form textarea{
         height: 34vh;
     }
-}
-
-@media screen and (max-width:350 px) {
     .required{
         /* right:25%; */
-        top:23%
+        top:17vh;
     }
-    
 }
+
+/* @media screen and (max-width:370 px) {
+    
+} */
