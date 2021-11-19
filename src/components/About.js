@@ -29,7 +29,7 @@ function About() {
                 <div className="content">
                     <ul>
                         <li> TextUtils helps in altering user data conveniently. User can change the case of their text, count the number of words and letters in their text.</li>
-                        <li> This website is made using REACT JS , jsx , HTML and Css. </li>
+                        <li> This website is made using REACT JS , jsx , HTML and CSS. </li>
                         <li> In formation of the logic useState hook has been used. </li>
                     </ul>
                 </div>

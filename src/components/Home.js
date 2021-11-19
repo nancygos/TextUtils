@@ -63,15 +63,43 @@ function Home() {
     }
     
     const handleOnChange=(event)=>{
-        // console.log("on Change");
+
         setWords(event.target.value);
+        
+        let startTime =new Date().getTime();
+        // let endTime;
+        // count words
+        let num = 0;
+        if(document.getElementById('text').value){
+            num = words.trim().split(/\s+/).length;
+        }
+        let c = JSON.parse(num);
+
+        // count time
+        let endTime=0;
+        setTimeout(()=>{
+            endTime =new Date().getTime();
+        },10);
+
+        let timeTaken = (startTime - endTime)/1000; 
+        // console.log(Math.ceil((timeTaken * c) * 1000));
+        // console.log(timeTaken);
+        // console.log('E '+ endTime);
+        // console.log('S ' + startTime);
+        let speed = document.querySelector('.speed');
+
+        speed.innerHTML = Math.round( (c/5) / (timeTaken/60) ) + ' wpm';
     }
 
     const [words , setWords] = useState("");
 
+    // wpm
+   
+
     return (
         <div className="data">
             <h1 className="head">Convert your text easily and precisely</h1>
+            <div className="speed"> 0 wpm</div>
             <textarea name="text" id="text" cols="150" rows="20" placeholder="Enter text here" value={words} onChange={handleOnChange}></textarea>   
 
             <div id="show_number" ></div>

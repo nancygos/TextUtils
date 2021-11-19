@@ -157,6 +157,36 @@ a:hover{
     text-align: center;
 }
 
+.content{
+    text-align: left;
+    margin-top: 10vh;
+    margin-left:5vw ;
+    /* visibility: hidden; */
+}
+.dot{
+    font-size: 40px;
+}
+
+.content ul li{
+    font-size: 2vw;
+    font-weight: 600;
+    line-height: 2;
+    list-style:inside;
+}
+
+/* .styleVisible{
+    visibility: visible;
+} */
+
+@media screen and (max-width:600px) {
+    .content ul li{
+        font-size: 5vw;
+        text-align: center;
+    }
+    .content{
+        margin-left: 0;
+    }
+}
 /*===================================
             Home Page
 =====================================*/
@@ -180,7 +210,7 @@ body{
     flex-wrap: wrap;
 }
 #text{
-    margin-top: 30px;
+    margin-top: 5px;
     cursor:text;
     border: none;
     box-shadow: 0 5px 10px 2px black;
@@ -236,13 +266,27 @@ textarea{
     visibility: hidden;
 }
 
+.speed{
+    display: block;
+    margin-left: 60%;
+    font-weight: 600;
+    /* margin-bottom:10% ; */
+    /* background-color: red; */
+    position: relative;
+    /* top:5px; */
+}
 
 @media only screen and (min-width:940px){
     .head{
         font-size: 2.5vw;
-    }     
+    }  
 }
 
+@media screen and (max-width:600px) {
+    .head{
+        font-size: 5vw;
+    }
+}
 
 /*===================================
             Contact Page
@@ -274,7 +318,7 @@ input{
     margin: 5px;
 }
 textarea{
-    margin: 5px;
+    /* margin: 5px; */
     border-radius: 12px;
     /* max-width: 90%; */
     min-width: 58%;
